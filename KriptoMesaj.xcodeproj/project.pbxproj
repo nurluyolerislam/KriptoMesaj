@@ -11,6 +11,15 @@
 		583552962917F543007A3D5A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 583552952917F543007A3D5A /* ContentView.swift */; };
 		583552982917F544007A3D5A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 583552972917F544007A3D5A /* Assets.xcassets */; };
 		5835529B2917F544007A3D5A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5835529A2917F544007A3D5A /* Preview Assets.xcassets */; };
+		583552A32917F70F007A3D5A /* KeyGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 583552A22917F70F007A3D5A /* KeyGenerator.swift */; };
+		5873A76E2941BD4800B219FC /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5873A76D2941BD4800B219FC /* Extensions.swift */; };
+		5873A7742941BE0C00B219FC /* RSACryptography.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5873A7732941BE0C00B219FC /* RSACryptography.swift */; };
+		5873A7782941C8CE00B219FC /* EncryptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5873A7772941C8CE00B219FC /* EncryptionView.swift */; };
+		5873A77A2941C8D700B219FC /* DecryptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5873A7792941C8D700B219FC /* DecryptionView.swift */; };
+		5873A77C2941C8F300B219FC /* KeyGenerationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5873A77B2941C8F300B219FC /* KeyGenerationView.swift */; };
+		58870F022941CF5100D62CAE /* KeyGenerationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58870F012941CF5100D62CAE /* KeyGenerationViewModel.swift */; };
+		58870F042941D67300D62CAE /* EncryptionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58870F032941D67300D62CAE /* EncryptionViewModel.swift */; };
+		58870F062941E7D400D62CAE /* DecryptionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58870F052941E7D400D62CAE /* DecryptionViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +28,15 @@
 		583552952917F543007A3D5A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		583552972917F544007A3D5A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5835529A2917F544007A3D5A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		583552A22917F70F007A3D5A /* KeyGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyGenerator.swift; sourceTree = "<group>"; };
+		5873A76D2941BD4800B219FC /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		5873A7732941BE0C00B219FC /* RSACryptography.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSACryptography.swift; sourceTree = "<group>"; };
+		5873A7772941C8CE00B219FC /* EncryptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncryptionView.swift; sourceTree = "<group>"; };
+		5873A7792941C8D700B219FC /* DecryptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecryptionView.swift; sourceTree = "<group>"; };
+		5873A77B2941C8F300B219FC /* KeyGenerationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyGenerationView.swift; sourceTree = "<group>"; };
+		58870F012941CF5100D62CAE /* KeyGenerationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyGenerationViewModel.swift; sourceTree = "<group>"; };
+		58870F032941D67300D62CAE /* EncryptionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncryptionViewModel.swift; sourceTree = "<group>"; };
+		58870F052941E7D400D62CAE /* DecryptionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecryptionViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +69,11 @@
 		583552922917F543007A3D5A /* KriptoMesaj */ = {
 			isa = PBXGroup;
 			children = (
-				583552932917F543007A3D5A /* KriptoMesajApp.swift */,
-				583552952917F543007A3D5A /* ContentView.swift */,
+				5873A7722941BDE200B219FC /* Utils */,
+				5873A7712941BD7A00B219FC /* Main */,
+				5873A7702941BD7100B219FC /* ViewModels */,
+				5873A76F2941BD6D00B219FC /* Views */,
+				5873A76C2941BD2E00B219FC /* Extensions */,
 				583552972917F544007A3D5A /* Assets.xcassets */,
 				583552992917F544007A3D5A /* Preview Content */,
 			);
@@ -65,6 +86,52 @@
 				5835529A2917F544007A3D5A /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		5873A76C2941BD2E00B219FC /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				5873A76D2941BD4800B219FC /* Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		5873A76F2941BD6D00B219FC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				583552952917F543007A3D5A /* ContentView.swift */,
+				5873A77B2941C8F300B219FC /* KeyGenerationView.swift */,
+				5873A7772941C8CE00B219FC /* EncryptionView.swift */,
+				5873A7792941C8D700B219FC /* DecryptionView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		5873A7702941BD7100B219FC /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				58870F012941CF5100D62CAE /* KeyGenerationViewModel.swift */,
+				58870F032941D67300D62CAE /* EncryptionViewModel.swift */,
+				58870F052941E7D400D62CAE /* DecryptionViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		5873A7712941BD7A00B219FC /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				583552932917F543007A3D5A /* KriptoMesajApp.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		5873A7722941BDE200B219FC /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				583552A22917F70F007A3D5A /* KeyGenerator.swift */,
+				5873A7732941BE0C00B219FC /* RSACryptography.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -111,6 +178,8 @@
 				Base,
 			);
 			mainGroup = 583552872917F543007A3D5A;
+			packageReferences = (
+			);
 			productRefGroup = 583552912917F543007A3D5A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,8 +206,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				583552A32917F70F007A3D5A /* KeyGenerator.swift in Sources */,
+				58870F062941E7D400D62CAE /* DecryptionViewModel.swift in Sources */,
 				583552962917F543007A3D5A /* ContentView.swift in Sources */,
+				5873A77C2941C8F300B219FC /* KeyGenerationView.swift in Sources */,
+				5873A77A2941C8D700B219FC /* DecryptionView.swift in Sources */,
+				5873A7782941C8CE00B219FC /* EncryptionView.swift in Sources */,
+				58870F042941D67300D62CAE /* EncryptionViewModel.swift in Sources */,
 				583552942917F543007A3D5A /* KriptoMesajApp.swift in Sources */,
+				5873A76E2941BD4800B219FC /* Extensions.swift in Sources */,
+				58870F022941CF5100D62CAE /* KeyGenerationViewModel.swift in Sources */,
+				5873A7742941BE0C00B219FC /* RSACryptography.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
